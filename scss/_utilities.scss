@@ -1,0 +1,18 @@
+.bg {
+    position: relative;
+
+    @media (min-width: $bp-big) {
+        &::before {
+            content: '';
+            display: block;
+            position: absolute;
+            width: 105%;
+            height: 125%;
+            background-color: $light-grayish-blue;
+            border-radius: 5rem;
+            top: -125%;
+            right: -15%;
+            z-index: -1;
+        }
+    }
+}
