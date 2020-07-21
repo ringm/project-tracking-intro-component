@@ -4,7 +4,9 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
 
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;700&display=swap" rel="stylesheet">
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="css/style.css">
   
   <title>Frontend Mentor | Project tracking intro component</title>
 
@@ -15,19 +17,35 @@
   </style>
 </head>
 <body>
-  Product
-  Features
-  Pricing
-  Login
+  <nav class="nav container">
+    <img src="images/logo.svg" alt="company logo" class="nav__logo">
+    <ul class="nav__list">
+      <li class="nav__list-item"><a href="#" class="nav__link">Product</a></li>
+      <li class="nav__list-item"><a href="#" class="nav__link">Features</a></li>
+      <li class="nav__list-item"><a href="#" class="nav__link">Pricing</a></li>
+      <li class="nav__list-item"><a href="#" class="nav__link">Login</a></li>
+    </ul>
+  </nav>
 
-  New
-  Monograph Dashboard
-
-  Powerful insights into your team
-  Project planning and time tracking for agile teams
-
-  Schedule a demo
-  to see a live preview
+  <main class="landing row container">
+    <div class="col landing__data">
+      <div class="landing__tagline-container">
+        <p class="landing__tagline landing__tagline--highlight">New</p>
+        <p class="landing__tagline">Monograph Dashboard</p>
+      </div>
+    
+      <h1 class="landing__title">Powerful insights into your team</h1>
+      <p class="landing__paragraph">Project planning and time tracking for agile teams</p>
+    
+      <div class="landing__cta-container">
+        <a href="#" class="landing__btn">Schedule a demo</a>
+        <p class="landing__btn-tagline">to see a preview</p>
+      </div>
+    </div>
+    <div class="col bg">
+      <img src="images/illustration-devices.svg" alt="landing image" class="landing__img">
+    </div>
+  </main>
   
   <footer>
     <p class="attribution">
