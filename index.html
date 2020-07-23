@@ -1,57 +1,59 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
 
   <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;700&display=swap" rel="stylesheet">
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   <link rel="stylesheet" href="css/style.css">
-  
+  <script src="js/app.js" defer></script>
+
   <title>Frontend Mentor | Project tracking intro component</title>
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
 </head>
-<body>
-  <nav class="nav container">
-    <img src="images/logo.svg" alt="company logo" class="nav__logo">
-    <ul class="nav__list">
-      <li class="nav__list-item"><a href="#" class="nav__link">Product</a></li>
-      <li class="nav__list-item"><a href="#" class="nav__link">Features</a></li>
-      <li class="nav__list-item"><a href="#" class="nav__link">Pricing</a></li>
-      <li class="nav__list-item"><a href="#" class="nav__link">Login</a></li>
-    </ul>
-  </nav>
 
-  <main class="landing row container">
-    <div class="col landing__data">
+<body>
+  <main class="grid">
+    <nav class="landing__nav nav">
+      <img src="images/logo.svg" alt="company logo" class="nav__logo">
+      <div class="nav__burger">
+        <input type="checkbox" class="nav__checkbox" id='toggle'>
+        <label for="toggle" class="nav__burger-icon"></label>
+      </div>
+      <ul id="nav-list" class="nav__list hide">
+        <li class="nav__list-item"><a href="#" class="nav__link">Product</a></li>
+        <li class="nav__list-item"><a href="#" class="nav__link">Features</a></li>
+        <li class="nav__list-item"><a href="#" class="nav__link">Pricing</a></li>
+        <li class="nav__list-item"><a href="#" class="nav__link">Login</a></li>
+      </ul>
+    </nav>
+
+    <div class="landing__col1">
       <div class="landing__tagline-container">
         <p class="landing__tagline landing__tagline--highlight">New</p>
         <p class="landing__tagline">Monograph Dashboard</p>
       </div>
-    
       <h1 class="landing__title">Powerful insights into your team</h1>
       <p class="landing__paragraph">Project planning and time tracking for agile teams</p>
-    
       <div class="landing__cta-container">
         <a href="#" class="landing__btn">Schedule a demo</a>
         <p class="landing__btn-tagline">to see a preview</p>
       </div>
     </div>
-    <div class="col bg">
+    <div class="landing__col2 bg">
       <img src="images/illustration-devices.svg" alt="landing image" class="landing__img">
     </div>
+
+    <footer class="footer">
+      <p class="attribution">
+        Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+        Coded by <a href="https://www.frontendmentor.io/profile/ringm" target="_blank">Martin Ring</a>.
+      </p>
+    </footer>
   </main>
-  
-  <footer>
-    <p class="attribution">
-      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-      Coded by <a href="#">Your Name Here</a>.
-    </p>
-  </footer>
 </body>
+
 </html>

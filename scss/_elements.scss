@@ -5,6 +5,7 @@ body {
 
 img {
     width: 100%;
+    object-fit: contain;
 }
 
 a {
@@ -13,10 +14,11 @@ a {
 }
 
 h1 {
-    font-size: 7.5rem;
+    font-size: 4.5rem;
     text-transform: uppercase;
 }
 
-ul, ol {
+ul,
+ol {
     list-style: none;
 }
